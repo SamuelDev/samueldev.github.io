@@ -1,22 +1,33 @@
-﻿<style>
-    #map {
-        height: 900px;
-    }
-</style>
+﻿<html>
+<head>
+    <style>
+        #map {
+            height: 900px;
+        }
+    </style>
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+</body>
+</html>
+
 
 <div class="row">
-    <div class="col-md-4"></div>
+    <div class="col-md-12">
+        <div id="map">
+        </div>
+    </div>
 </div>
 
-<div id="map">
-</div>
 
-<img src="~/Content/Erangel_Minimap.jpg" id="eMap" style="display:none;" />
 
-@section scripts{
+<img src="Erangel_Minimap.jpg" id="eMap" style="display:none;" />
 
-<script src="~/Content/leaflet.js"></script>
-<script src="~/Content/leaflet-heat.js"></script>
+<script src="jquery-1.10.2.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="leaflet.js"></script>
+<script src="leaflet-heat.js"></script>
 <script>
 
     var divisor = 97.65625;
@@ -40,4 +51,3 @@
     }).addTo(map);
 
 </script>
-}
