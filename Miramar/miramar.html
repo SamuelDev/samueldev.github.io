@@ -53,10 +53,10 @@
     var image = L.imageOverlay($('#eMap').prop('src'), bounds).addTo(map);
     map.fitBounds(bounds);
 
-    //points.forEach(x => L.marker(L.latLng((800000 - x.Y) / divisor, x.X / divisor)).addTo(map).bindPopup(x.MatchId + ' ' + x.X + ', ' + x.Y));
+    //points.forEach(x => L.marker(L.latLng((819200 - x.Y) / divisor, x.X / divisor)).addTo(map).bindPopup(x.MatchId + ' ' + x.X + ', ' + x.Y));
     var LatLngPoints = [];
 
-    points.forEach(x => LatLngPoints.push([(800000 - x.Y) / divisor, x.X / divisor, 0.4]));
+    points.forEach(x => LatLngPoints.push([(819200 - x.Y) / divisor, x.X / divisor, 0.4]));
 
 
     var heat = L.heatLayer(LatLngPoints, {
