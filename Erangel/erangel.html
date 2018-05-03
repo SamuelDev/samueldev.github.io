@@ -54,7 +54,7 @@
     map.fitBounds(bounds);
 
     //points.forEach(x => L.marker(L.latLng((800000 - x.Y) / divisor, x.X / divisor)).addTo(map).bindPopup(x.MatchId + ' ' + x.X + ', ' + x.Y));
-    L.marker(L.latLng(2500, 2500)).addTo(map);
+    
     var LatLngPoints = [];
 
     points.forEach(x => LatLngPoints.push([(800000 - x.Y) / divisor, x.X / divisor, 0.4]));
