@@ -1,0 +1,93 @@
+﻿<html>
+<head>
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+</body>
+</html>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <canvas id="myChart" width="740" height="200"></canvas>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Erangel Heatmap:</label>
+                <a href="Erangel/erangel.html">
+                    <img src="Erangel_Minimap_lowres.jpg" alt="Erangel Heatmap" style="height:256px;width:256px;"/>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Miramar Heatmap:</label>
+                <a href="Miramar/miramar.html">
+                    <img src="Miramar_Minimap_lowres.jpg" alt="Miramar Heatmap" style="height:256px;width:256px;" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="primary alert-primary alert-dismissible fade in">
+                <h3>Final Circle Heatmaps</h3>
+                <h4>These are some heatmaps I made to show the final circle locations on each map.  The final circle does not always mean the smallest circle though, as a game could end with a 2km wide circle.  These heatmaps take the center point of each of those circles.</h4>
+                <h5>A possible change down the road will include factoring the size of the final circle into the heatmap equation.  Making the smallest circles hotter, and larger circles cooler, since the larger circles may still have more circles that could be placed inside of them.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="jquery-1.10.2.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="https://cdnjs.com/libraries/Chart.js"></script>
+<script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+
+    // Instantiate a new chart using 'data' (defined below)
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            "NumPackages": 4093,
+            "ItemCounts": {
+                "Item_Weapon_AUG_C": 562,
+                /*"Item_Ammo_556mm_C": 2274,*/
+                "Item_Attach_Weapon_Stock_AR_Composite_C": 499,
+                "Item_Armor_C_01_Lv3_C": 1111,
+                "Item_Weapon_Mk14_C": 572,
+                /*"Item_Ammo_762mm_C": 4134,*/
+                "Item_Attach_Weapon_Upper_CQBSS_C": 1687,
+                "Item_Attach_Weapon_Upper_PM2_01_C": 233,
+                "Item_Head_G_01_Lv3_C": 1112,
+                "Item_Weapon_M24_C": 1155,
+                "Item_Attach_Weapon_Magazine_ExtendedQuickDraw_Large_C": 521,
+                "Item_Back_C_01_Lv3_C": 1104,
+                "Item_Attach_Weapon_Stock_SniperRifle_CheekPad_C": 259,
+                "Item_Weapon_AWM_C": 627,
+                /*"Item_Ammo_300Magnum_C": 1254,*/
+                "Item_Ghillie_01_C": 404,
+                "Item_Weapon_Groza_C": 596,
+                "Item_Attach_Weapon_Muzzle_Suppressor_Large_C": 497,
+                "Item_Attach_Weapon_Magazine_ExtendedQuickDraw_SniperRifle_C": 237,
+                "Item_Boost_AdrenalineSyringe_C": 631,
+                "Item_Ghillie_02_C": 418,
+                "Item_Heal_MedKit_C": 648,
+                "Item_Boost_PainKiller_C": 201,
+                "Item_Attach_Weapon_Muzzle_Suppressor_SniperRifle_C": 270,
+                "Item_Weapon_M249_C": 581,
+                "Item_Heal_FirstAid_C": 217,
+                "Item_Attach_Weapon_Upper_ACOG_01_C": 247
+            }
+        }
+    });
+</script>
