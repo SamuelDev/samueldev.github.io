@@ -1,0 +1,4 @@
+baseURL = "https://samueldev.io/"
+languageCode = "en-us"
+title = "SamuelDev Blog"
+theme = "tale"
