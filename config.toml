@@ -1,0 +1,12 @@
+baseURL = "https://samueldev.io/"
+languageCode = "en-us"
+title = "SamuelDev Blog"
+theme = "tale"
+Copyright = "© SamuelDev 2021"
+
+[params]
+description = "My personal blog that I use to write about interesting problems I've solved while coding."
+authorlocation = "United States"
+
+githubName = "SamuelDev"
+email = "samueldevc@gmail.com"
