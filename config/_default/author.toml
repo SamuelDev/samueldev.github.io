@@ -1,5 +1,5 @@
-name = "About SamuelDev"
-avatar = "" # Avatar image. Default to "images/profile.webp".
+name = "SamuelDev"
+#avatar = "images/engineer.jpg" # Avatar image. Default to "images/profile.webp".
 bio = "I’ve been a software engineer in the industry for six years, both in the Midwest and on the West Coast. Learn more on the About page."
 company = "Null"
 location = "USA"
