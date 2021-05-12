@@ -1,55 +1,12 @@
-# baseURL = "https://samueldev.io/"
-# languageCode = "en-us"
-# title = "SamuelDev Blog"
-# theme = "geekblog"
-# Copyright = "© SamuelDev 2021"
-
-# [params]
-# description = "My personal blog that I use to write about interesting problems I've solved while coding."
-# authorlocation = "United States"
-
-# githubName = "SamuelDev"
-# email = "samueldevc@gmail.com"
-
 baseURL = "https://samueldev.io/"
-title = "SamuelDev's Blog"
-theme = "geekblog"
+languageCode = "en-us"
+title = "SamuelDev Blog"
+theme = "tale"
+Copyright = "© SamuelDev 2021"
 
-# Geekblog required configuration
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-disablePathToLower = true
+[params]
+description = "My personal blog that I use to write about interesting problems I've solved while coding."
+authorlocation = "United States"
 
-# Needed for mermaid shortcodes
-[markup]
-  [markup.goldmark.renderer]
-    unsafe = true
-  [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 9
-
-[taxonomies]
-  author = "authors"
-  tag = "tags"
-
-[mediaTypes]
-  [mediaTypes."application/atom+xml"]
-    suffixes = ["xml"]
-
-[outputFormats]
-  [outputFormats.Atom]
-    name = "Atom"
-    mediaType = "application/atom+xml"
-    baseName = "atom"
-    isPlainText = false
-    rel = "alternate"
-    isHTML = false
-    noUgly = true
-    permalinkable = false
-
-[outputFormats.outputs]
-  home = ["HTML", "ATOM"]
-  page = ["HTML"]
-  section = ["HTML"]
-  taxonomy = ["HTML"]
-  term = ["HTML", "ATOM"]
+githubName = "SamuelDev"
+email = "samueldevc@gmail.com"
