@@ -10,3 +10,11 @@ authorlocation = "United States"
 
 githubName = "SamuelDev"
 email = "samueldevc@gmail.com"
+
+# googleAnalytics = "UA-49706427-1"
+
+# [utterances]
+#   repo = "SamuelDev/samueldev.github.io"
+#   #issueTerm = "pathname" # pathname, url, title, og:title
+#   label = "comment"
+#   theme = "preferred-color-scheme" # github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
